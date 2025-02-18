@@ -1,0 +1,273 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffbfbf;
+    width: 100%;
+}
+
+//Footer-subcribes
+.footer-subscribe {
+    margin: 0 92px;
+}
+
+.subscribe {
+    padding: 40px 0;
+
+    .subscribe-title {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.email {
+    position: relative;
+    width: 488px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 0 0 0 0;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+    .subscribe-btn {
+        color: #fff;
+        border-radius: 0 0 0 0;
+        letter-spacing: 2px;
+        background-color: #1c1d1d;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        padding: 0 15px;
+        height: 60%;
+        border-radius: 3px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    input {
+        color: #0f0f0f;
+        font-size: 1.7rem;
+        background-color: transparent;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 50%;
+        height: 60%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+}
+
+.accept-terms {
+    display: flex;
+    flex-direction: row;
+
+    .check-input {
+        background-color: #fff;
+        border: 1px solid #bbb;
+        width: 16px;
+        cursor: pointer;
+        box-shadow: inset rgba(0, 0, 0, 0.1);
+        transition: 0.05s border-color ease-in-out;
+    }
+
+    .check-terms {
+        padding: 0 8px;
+    }
+}
+
+//Footer
+.footer {
+    background-color: #0f0f0f;
+}
+.container {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+.contact {
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    width: calc(100% / 3);
+}
+
+.commitments {
+    padding: 10px;
+    align-items: center;
+    text-align: right;
+    width: calc(100% / 3);
+}
+
+.beauty-shop {
+    align-items: center;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.logo-footer {
+    width: 170px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.heading-content {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.content {
+    color: rgba(255, 255, 255, 0.68);
+    font-style: italic;
+}
+
+.icon-list {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    padding: 5px 7px;
+    margin: 0 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--white);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #ffbfbf;
+        border-color: #ffbfbf;
+        transform: scale(1.1);
+    }
+
+    .font-icon {
+        color: var(--white);
+    }
+}
+
+.btn-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+
+    .icon-up {
+        color: var(--white);
+        width: 100%;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .beauty-shop {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .footer-wrapper {
+        overflow: hidden;
+    }
+
+    .footer-subscribe {
+        margin: 0;
+    }
+
+    .subscribe {
+        padding: 4rem 0;
+
+        .subscribe-title {
+            font-size: 1.6rem;
+        }
+    }
+
+    .email {
+        width: 35rem;
+        height: 5rem;
+        font-size: 1.3rem;
+
+        .subscribe-btn {
+            padding: 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        input {
+            font-size: 1.3rem;
+        }
+    }
+
+    .accept-terms {
+        .check-input {
+            width: 1.3rem;
+        }
+
+        .check-terms {
+            padding: 0 8px;
+            font-size: 1.3rem;
+        }
+    }
+
+    .container {
+        margin: 0 20px;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .commitments {
+        display: none;
+    }
+
+    .beauty-shop {
+        .logo-footer,
+        .content {
+            display: none;
+        }
+    }
+
+    .icon-list {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,152 @@
+.checkout {
+    margin-top: 75px;
+}
+
+.checkout-heading {
+    padding: 34px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.checkout-body {
+    margin: 0 16rem;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-infor,
+.total-price {
+    width: 48%;
+}
+
+.customer-infor {
+    margin-right: 40px;
+}
+
+.heading-content {
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.require {
+    color: #e42234;
+    margin-left: 5px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #fcfcfc;
+    border-color: #f1f1f1;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px 1px 3px 1px;
+    transition: all ease 0.3s;
+    font-size: 1.6rem;
+    margin: 10px 0;
+
+    &:focus-within {
+        border-color: #eae0e0;
+    }
+}
+
+.total-table {
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.heading {
+    background-color: #f7f7f7;
+
+    .table-heading {
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.body {
+    background-color: #fdfdfd;
+
+    .product-name {
+        padding: 16px 20px;
+    }
+}
+
+.product-price {
+    padding: 16px 20px;
+    color: var(--primary);
+    text-align: right;
+}
+
+.footer {
+    background-color: #fdfdfd;
+
+    .product-total {
+        padding: 16px 20px;
+        font-weight: 600;
+        font-size: 1.5rem;
+        background-color: #f7f7f7;
+    }
+}
+
+.place-order {
+    width: 100%;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--black);
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .checkout-body {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .wrapped {
+        overflow: hidden;
+    }
+
+    .checkout-body {
+        margin: 0 0.05rem;
+        flex-direction: column;
+    }
+
+    .customer-infor,
+    .total-price {
+        width: 100%;
+    }
+
+    .customer-infor {
+        padding: 0 0.4rem;
+        margin-right: 0;
+    }
+
+    .text-input {
+        font-size: 1.3rem;
+    }
+
+    .total-price {
+        margin-top: 1rem;
+    }
+}

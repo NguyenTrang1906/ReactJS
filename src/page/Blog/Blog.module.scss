@@ -1,0 +1,40 @@
+.blog {
+    margin-top: 75px;
+}
+
+.blog-heading {
+    width: 100%;
+    padding: 34px 0;
+    border-bottom: 1px solid #f1f1f1;
+
+    .heading {
+        font-size: 2.8rem;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+.blog-wrapper {
+    padding: 50px 0;
+    margin: 0 100px;
+}
+
+.menu-blog {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .blog-wrapper {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 740px) {
+    .wrapper {
+        overflow: hidden;
+    }
+    .blog-wrapper {
+        margin: 0 5px;
+    }
+}
